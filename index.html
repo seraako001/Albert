@@ -1,0 +1,26 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Albert</title>
+      <script src="https://unpkg.com/vue@3.0.2"></script>
+  </head>
+  <body>
+     <h1>Hello Albert :)</h1>  
+  
+  <div id="app">
+     <p>{{ title }} - {{ author }} - {{ age }}</p>
+     <p>{{ gender }}</p>  
+      <p>{{ skills }}</p>
+  
+     <button v-on:click="age++">Increase age</button>&nbsp;
+     <button v-on:click="age--">decrease age</button>
+  
+     <p @click="changeTitle('OathBringer')">Change Book Title</p>
+  </div> 
+   
+  
+  <script src="app.js"></script>
+  </body>
+</html>
